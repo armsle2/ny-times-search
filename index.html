@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NYT App</title>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./javascript/java.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 id="title">NY Times Search</h1>
+        </div>
+        <div class="row" id="parameters">
+            <h3>Search Parameters:</h3>
+        </div>
+        <div class="row">
+            <div class="boxindex">
+                <form>
+                    <h4>Search Term:</h4>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="search" placeholder="">  
+                    </div>
+                    <h4>Number of Records to Retrieve:</h4>
+                    <div class="input-group">
+                        <select class="form-control" id="records">
+                            <option></option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <h4>Start Year (optional):</h4>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="start" placeholder="">
+                    </div>
+                    <h4>End Year (optional):</h4>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="end" placeholder="">
+                    </div>
+                    <div id="buttons">
+                        <input id="searchButton" type="submit" value="Search">
+                        <button id="clearButton">Clear Results</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row" id="parameters2">
+            <h3>Top Articles</h3>
+        </div>
+        <div class="row">
+            <div class="boxindex">
+                <form id="articlelist">
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+</body>
+
+</html>
